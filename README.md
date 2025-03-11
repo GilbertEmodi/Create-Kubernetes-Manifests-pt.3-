@@ -1,17 +1,8 @@
-<img src="https://cdn.prod.website-files.com/677c400686e724409a5a7409/6790ad949cf622dc8dcd9fe4_nextwork-logo-leather.svg" alt="NextWork" width="300" />
-
 # P3 - Create Kubernetes Manifests
-
-**Project Link:** [View Project](http://learn.nextwork.org/projects/aws-compute-eks3)
-
-**Author:** Gilbert Emodi  
-**Email:** zemodi99@gmail.com
-
----
 
 ## Create Kubernetes Manifests
 
-![Image](http://learn.nextwork.org/ecstatic_beige_calm_tarapirohe/uploads/aws-compute-eks3_b01876555)
+![Image](https://github.com/GilbertEmodi/Create-Kubernetes-Manifests-pt.3-/blob/main/Kubernetes%203.png)
 
 ---
 
@@ -55,7 +46,7 @@ Kubernetes manifests are instructions for Kubernetes on how it should deploy the
 
 A Kubernetes deployment manages multiple copies of the same containerized backened. The container image URL in my Deployment manifest tells Kubernetes the attributes of the container that I'd like Kuernetes to deploy.
 
-![Image](http://learn.nextwork.org/ecstatic_beige_calm_tarapirohe/uploads/aws-compute-eks3_b01876554)
+![Image](https://github.com/GilbertEmodi/Create-Kubernetes-Manifests-pt.3-/blob/main/1-manifests.png)
 
 ---
 
@@ -65,7 +56,7 @@ A Kubernetes Service exposes the application to network traffic. You need a Serv
 
 My Service manifest sets up a NodePort and targetPort, which means it maps traffic that get to port 8080 of the service to port 8080 of a container running the application.
 
-![Image](http://learn.nextwork.org/ecstatic_beige_calm_tarapirohe/uploads/aws-compute-eks3_b01876555)
+![Image](https://github.com/GilbertEmodi/Create-Kubernetes-Manifests-pt.3-/blob/main/2-ServiceManifests.png)
 
 ---
 
@@ -77,7 +68,7 @@ A notable line in the Deployment manifest is the number of replicas, which means
 
 One part of the Deployment manifest I still want to know more about is the namespace of a deployment because I am not too clear what it means and how it impacts Deployment/how it's used as metadata.
 
-![Image](http://learn.nextwork.org/ecstatic_beige_calm_tarapirohe/uploads/aws-compute-eks3_6aae73e71)
+![Image](https://github.com/GilbertEmodi/Create-Kubernetes-Manifests-pt.3-/blob/main/3-AnnotatedManifestFinal.png)
 
 ---
 
